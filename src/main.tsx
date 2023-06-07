@@ -13,10 +13,11 @@ import setupStore from "./redux/store/store";
 interface AppState {}
 
 const AppContainer: FC<AppState> = () => {
-  const store = setupStore();
+  const store =   setupStore();
 
   return (
-    <StrictMode>
+    <StrictMode >
+
       <Provider store={store}>
         <Router>
           <Header />
